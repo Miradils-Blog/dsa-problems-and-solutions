@@ -23,8 +23,9 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2)
         carry = c / 10;
 
         tail->next = malloc(sizeof(struct ListNode));
-        tail->next->val = c % 10;
         tail = tail->next;
+        tail->val = c % 10;
+        tail->next = NULL;
 
         if (l1)
             l1 = l1->next;
