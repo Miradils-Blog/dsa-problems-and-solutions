@@ -21,6 +21,6 @@ int main()
         }
     }
 
-    printf("%d", rightmost - leftmost + 1);
+    printf("%d\n", rightmost - leftmost + 1);
     return 0;
 }
